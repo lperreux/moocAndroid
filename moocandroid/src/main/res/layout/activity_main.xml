@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.osiatis.moocandroid.MainActivity">
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainTitle"
+        android:maxHeight="100dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textIsSelectable="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/nameprompt"
+        android:id="@+id/mainLibConnexion"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/mainTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainConnexionValue"
+        android:layout_below="@+id/mainLibConnexion"
+        android:layout_alignStart="@+id/mainLibConnexion"
+        android:background="#DCDCDC"
+        android:layout_marginTop="15dp"
+        android:layout_alignEnd="@+id/mainLibConnexion" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@+id/mainOkbtn"
+        android:onClick="onOkClick"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/mainConnexionValue"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
